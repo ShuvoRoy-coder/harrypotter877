@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'GothamBold';
+    src: url('/assets/fonts/GOTHAM-BOLD.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'GothamBook';
+    src: url('/assets/fonts/Gotham-Book 2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'GothamMedium';
+    src: url('/assets/fonts/Gotham-Medium 2.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
