@@ -11,10 +11,14 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- font-family: "Roboto", serif; -->
+  <!-- font-family: "Roboto", serif; -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  
+  <link rel="stylesheet" href="./assets/css/timer.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -23,17 +27,20 @@
       theme: {
         extend: {
           colors: {
-            brandColor: '#2bbced',
+            blue1: '#2bbced',
+            blue2: '#1058A2',
           },
           fontFamily: {
             roboto: ['Roboto', 'serif'],
+            gothamBold: ['GothamBold', 'sans-serif'],
+            gothamBook: ['GothamBook', 'sans-serif'],
+            gothamMedium: ['GothamMedium', 'sans-serif'],
           },
-          screen: {
-            mini: '400px',
+          screens: {
+            mini: '450px',
           },
           container: {
             center: true,
-            padding: '10px',
           },
         }
       }
@@ -42,15 +49,73 @@
 
 </head>
 
-<body id="landing-page" class="font-roboto bg-brandColor">
-  <section id="hero-items" 
-    class="min-h-screen bg-[url('./assets/images/landing/hero.webp')] bg-cover bg-center">
+<body id="landing-page" class="font-roboto bg-blue2">
+  <section id="hero-items" class="min-h-screen bg-[url('./assets/images/landing/hero.webp')] bg-cover bg-center bg-no-repeat">
 
-    <div class="container">
-      
+    <div class="container text-white py-20 pr-3">
+
+      <div class="space-y-9">
+
+        <h1 class="text-white font-gothamMedium font-semibold text-2xl pl-3">
+          THE SOLUTION IS COMING <span class="text-blue1">SOON...</span>
+        </h1>
+
+        <div class="logo max-w-[680px]">
+          <img src="./assets/images/logos/logo-1.png" alt="logo" class="w-full">
+        </div>
+
+        <p class="text-white flex flex-col gap-y-2 max-w-lg font-light text-[15px] leading-5 pl-3">
+          Varsuite Core is a user-friendly platform that helps you easily manage your 
+          websites. Whether your site is built on WordPress or Laravel, Varsuite Core 
+          simplifies the process of keeping everything running smoothly. It handles 
+          things like updates, backups, monitoring for issues, and even provides tools 
+          to ensure your site stays secure.
+
+          <span class="font-semibold">
+            Think of it as a control center for your websites, so you can focus on your 
+            business while it takes care of the tech stuff.
+          </span>
+        </p>
+
+        <!-- progress bar start -->
+        <div class="progress-bar max-w-lg pl-3">
+          <div id="timer" class="grid grid-cols-2 mini:grid-cols-4 gap-2 place-items-center mini:place-items-start"></div>
+        </div>
+        <!-- progress bar end -->
+
+        <!-- form area start -->
+        <form action="" class="pl-3 max-w-lg pr-2 space-y-2">
+
+          <div class="agree-checkbox flex items-center gap-1.5">
+            <input class="size-4" type="checkbox" name="agree" id="agree">
+            <label for="agree" class="text-[11px] font-light"> 
+              I agree that Varsuite Core can send me information, offers and latest news.
+            </label>
+          </div>
+
+          <div class="flex items-center justify-between border border-blue2 w-full text-sm">
+            <div class="w-full text-white font-gothamBook">
+              <input type="email" name="email" id="email" 
+                class="w-full bg-transparent outline-none px-5 py-[10px] focus:bg-transparent" placeholder="YOUR EMAIL"
+              >
+            </div>
+            <button type="submit" 
+              class="bg-blue2 shrink-0 text-white font-gothamMedium px-5 py-[10px]
+                transition-all duration-300
+                hover:bg-blue1 hover:border-blue1">
+              NOTIFY ME
+            </button>
+          </div>
+
+        </form>
+        <!-- form area end -->
+
+      </div>
     </div>
 
   </section>
+
+  <script src="./assets/js/timer.js"></script>
 </body>
 
 </html>

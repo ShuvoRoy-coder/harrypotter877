@@ -1,0 +1,60 @@
+.base-timer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 1px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 5px;
+    stroke-linecap: square;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: #FE8506;
+}
+
+.base-timer__path-completed {
+    stroke-width: 1px;
+    stroke: none;
+}
+
+.timer-text {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-timer__unit-label {
+    font-size: 11px;
+    line-height: 11px;
+    font-family: GothamBook;
+    text-transform: uppercase;
+}
+
+.timer__unit {
+    font-family: GothamBold;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 900;
+}
