@@ -59,10 +59,10 @@
     font-weight: 900;
 }
 
-@media only screen and (min-width: 370px) and (max-width: 410.88px) {
+@media only screen and (min-width: 350px) and (max-width: 459.88px) {
     .base-timer {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
     }
 
     .base-timer__unit-label {
@@ -76,7 +76,7 @@
     }
 }
 
-@media only screen and (max-width: 369.88px) {
+@media only screen and (max-width: 349.88px) {
     .base-timer {
         width: 75px;
         height: 75px;

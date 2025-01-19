@@ -18,3 +18,11 @@
     font-weight: 500;
     font-style: normal;
   }
+
+  /* swiper next and previous button start */
+
+  .swiper-pagination-bullet-active, .swiper-pagination-bullet {
+    background-color: white!important;
+  }
+
+  /* swiper next and previous button end */
