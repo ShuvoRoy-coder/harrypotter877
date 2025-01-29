@@ -7,6 +7,8 @@ tailwind.config = {
                 blue2: '#1058A2',
                 blue3: '#070F36',
                 blue4: '#238DCD',
+
+                gray1: '#32373c',
             },
             fontFamily: {
                 roboto: ['Roboto', 'serif'],

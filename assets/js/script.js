@@ -32,3 +32,46 @@ navLinks.forEach((link) => {
       hideNavbar();
   });
 });
+
+// navbar script end
+// accordion script start
+
+document.addEventListener("DOMContentLoaded", function () {
+    const accordionButtons = document.querySelectorAll(".accordion-button");
+    const firstAccordionButton = accordionButtons[0];
+    const firstAccordionText = firstAccordionButton.nextElementSibling;
+
+    // Open the first accordion by default
+    firstAccordionButton.classList.add("active");
+    firstAccordionButton.querySelector("span").textContent = "−";
+    firstAccordionText.classList.add("active");
+    firstAccordionText.style.maxHeight = firstAccordionText.scrollHeight + "px";
+
+    accordionButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const currentlyActive = document.querySelector(".accordion-text.active");
+            const currentlyActiveButton = document.querySelector(".accordion-button.active");
+            
+            if (currentlyActive && currentlyActive !== this.nextElementSibling) {
+                currentlyActive.classList.remove("active");
+                currentlyActive.style.maxHeight = null;
+                currentlyActiveButton.classList.remove("active");
+                currentlyActiveButton.querySelector("span").textContent = "+";
+            }
+            
+            this.classList.toggle("active");
+            this.querySelector("span").textContent = this.classList.contains("active") ? "−" : "+";
+            
+            const accordionText = this.nextElementSibling;
+            if (accordionText.classList.contains("active")) {
+                accordionText.classList.remove("active");
+                accordionText.style.maxHeight = null;
+            } else {
+                accordionText.classList.add("active");
+                accordionText.style.maxHeight = accordionText.scrollHeight + "px";
+            }
+        });
+    });
+});
+
+// accordion script end

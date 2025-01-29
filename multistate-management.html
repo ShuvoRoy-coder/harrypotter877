@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font-family: "Roboto", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/timer.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body id="multistate-management" class="font-roboto bg-blue2 relative">
+
+    <!-- navbar section start -->
+
+    <section id="navbar-section" class="bg-blue3 sticky z-50 top-0 left-0">
+        <div class="relative w-full">
+            <div class="container px-3">
+                <nav class="flex items-center justify-between gap-5 py-5">
+                    <div class="logo w-40 mini:w-60 sm:w-72">
+                        <a href="home.html" class="inline-block w-full">
+                            <img src="./assets/images/logos/logo-3.svg" alt="logo" class="w-full">
+                        </a>
+                    </div>
+
+                    <div class="nav-list flex items-center justify-end gap-10 lg:gap-5 xl:gap-10 font-gothamBook">
+
+                        <ul class="nav-links absolute top-full left-0 text-white uppercase z-30 transition-all duration-300
+                                flex flex-col items-center gap-6 justify-start pt-14 pb-20 bg-blue3 invisible opacity-0
+                                lg:gap-5 lg:flex-row lg:static lg:justify-end lg:bg-transparent lg:w-auto lg:visible lg:opacity-100 lg:py-0
+                                xl:gap-10 max-h-screen w-full overflow-auto">
+
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                            >
+                                <a href="home.html" class="inline-block">HOME</a>
+                            </li>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="features.html" class="inline-block">FEATURES</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="#" class="inline-block">FAQS</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="plans.html" class="inline-block">PLANS</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="contact-us.html" class="inline-block">CONTACT</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="support.html" class="inline-block">SUPPORT</a>
+                            </li>
+                        </ul>
+
+                        <div class="text-white uppercase flex items-center gap-4">
+                            <div
+                                class="nav-link font-normal transition-all duration-300 relative px-1 py-1
+                                    after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="#" class="">LOGIN</a>
+                            </div>
+                            <button id="toggle-button" class="inline-block lg:hidden relative">
+
+                                <svg class="toggle-bar transition-all duration-100" width="26" height="17"
+                                    viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.166626 15.8334C0.166626 15.189 0.688961 14.6667 1.33329 14.6667H24.6666C25.3109 14.6667 25.8333 15.189 25.8333 15.8334C25.8333 16.4777 25.3109 17 24.6666 17H1.33329C0.688961 17 0.166626 16.4777 0.166626 15.8334Z"
+                                        fill="#2BBCED" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.166626 8.50001C0.166626 7.85568 0.688961 7.33334 1.33329 7.33334H24.6666C25.3109 7.33334 25.8333 7.85568 25.8333 8.50001C25.8333 9.14434 25.3109 9.66668 24.6666 9.66668H1.33329C0.688961 9.66668 0.166626 9.14434 0.166626 8.50001Z"
+                                        fill="#2BBCED" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.166626 1.16667C0.166626 0.522335 0.688961 0 1.33329 0H24.6666C25.3109 0 25.8333 0.522335 25.8333 1.16667C25.8333 1.811 25.3109 2.33333 24.6666 2.33333H1.33329C0.688961 2.33333 0.166626 1.811 0.166626 1.16667Z"
+                                        fill="#2BBCED" />
+                                </svg>
+
+                                <svg class="cross-bar -mt-px transition-all duration-300 absolute top-0 invisible opacity-0"
+                                    width="26" height="20" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_53_10)">
+                                        <path d="M2 2L27.99 27.99" stroke="#21AEE4" stroke-width="4"
+                                            stroke-miterlimit="10" stroke-linecap="round" />
+                                        <path d="M2 27.99L27.99 2" stroke="#21AEE4" stroke-width="4"
+                                            stroke-miterlimit="10" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_53_10">
+                                            <rect width="29.99" height="29.99" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- navbar section end -->
+
+    <!-- items start -->
+     <section id="items" class="w-full bg-white relative py-8 overflow-hidden">
+         
+        <div class="w-full lg:w-1/2 h-full absolute top-0 right-0 z-0">
+            <img src="./assets/images/multistate-management/right-bg.webp" alt="bg-img" class="w-full h-full object-cover">
+        </div>
+
+        <div class="container px-3 flex flex-col-reverse lg:flex-row items-center justify-between 
+            relative z-10
+            gap-16 xl:gap-24"
+        >
+
+            <div class="space-y-10 lg:w-2/5">
+                <h1 class="page-title uppercase font-bold text-blue2 font-gothamBold
+                    text-4xl mini:text-5xl"
+                >
+                    MULTI-SITE MANAGEMENT
+                </h1>
+                
+                <div class="description text-gray1 font-light text-sm space-y-3">
+                    <p>
+                        Effortlessly manage and update multiple <span class="font-bold">WordPress</span> or <span class="font-bold">Laravel</span> websites 
+                        from a single dashboard. Monitor performance, enhance security, and 
+                        streamline your workflow with ease.
+                    </p>
+                    <p>
+                        With Varsuite Core’s Multi-Site Management, you can control and manage 
+                        all your WordPress websites from one central platform. No more 
+                        switching between individual dashboards everything is at your fingertips
+                    </p>
+
+                </div>
+
+                <ul class="space-y-3">
+                    <li class="text-gray1 font-light text-sm flex items-start gap-2.5">
+                        <div class="shrink-0">
+                            <img src="./assets/images/icons/point-icon.svg" alt="point-icon" class="size-8">
+                        </div>
+                        <div>
+                            <span class="font-bold">Unified Control:</span> Oversee and manage all your websites from a 
+                            single, intuitive interface.
+                        </div>
+                    </li>
+
+                    <li class="text-gray1 font-light text-sm flex items-start gap-2.5">
+                        <div class="shrink-0">
+                            <img src="./assets/images/icons/point-icon.svg" alt="point-icon" class="size-8">
+                        </div>
+                        <div>
+                            <span class="font-bold"> Bulk Actions:</span> Update plugins, themes, and core files across 
+                            multiple sites with just a few clicks.
+                        </div>
+                    </li>
+
+                    <li class="text-gray1 font-light text-sm flex items-start gap-2.5">
+                        <div class="shrink-0">
+                            <img src="./assets/images/icons/point-icon.svg" alt="point-icon" class="size-8">
+                        </div>
+                        <div>
+                            <span class="font-bold"> Enhanced Security:</span> Run security checks and scans for all your sites 
+                            at once, ensuring maximum protection.
+                        </div>
+                    </li>
+
+                    <li class="text-gray1 font-light text-sm flex items-start gap-2.5">
+                        <div class="shrink-0">
+                            <img src="./assets/images/icons/point-icon.svg" alt="point-icon" class="size-8">
+                        </div>
+                        <div>
+                            <span class="font-bold"> Comprehensive Monitoring:</span> Track performance, uptime, and site 
+                            health across your entire network, all from Varsuite Core.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full sm:w-3/4 md:w-3/5">
+                <img src="./assets/images/multistate-management/monitor.webp" alt="monitor-img" class="w-full">
+            </div>
+
+        </div>
+
+        <div class="container px-3 pt-10">
+            <p class="text-xs text-gray1 font-light">*Feature not currently available in WordPress</p>
+        </div>
+
+     </section>
+    <!-- items end -->
+
+
+
+    <script src="./assets/js/tailwind.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
