@@ -7,6 +7,7 @@ tailwind.config = {
                 blue2: '#1058A2',
                 blue3: '#070F36',
                 blue4: '#238DCD',
+                blue5: '#1C9AD6',
 
                 gray1: '#32373c',
             },

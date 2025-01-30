@@ -1,0 +1,411 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font-family: "Roboto", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/timer.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body id="contact-us" class="font-roboto bg-white relative">
+
+    <!-- navbar section start -->
+
+    <section id="navbar-section" class="bg-blue3 sticky z-50 top-0 left-0">
+        <div class="relative w-full">
+            <div class="container px-3">
+                <nav class="flex items-center justify-between gap-5 py-5">
+                    <div class="logo w-40 mini:w-60 sm:w-72">
+                        <a href="home.html" class="inline-block w-full">
+                            <img src="./assets/images/logos/logo-3.svg" alt="logo" class="w-full">
+                        </a>
+                    </div>
+
+                    <div class="nav-list flex items-center justify-end gap-10 lg:gap-5 xl:gap-10 font-gothamBook">
+
+                        <ul class="nav-links absolute top-full left-0 text-white uppercase z-30 transition-all duration-300
+                                flex flex-col items-center gap-6 justify-start pt-14 pb-20 bg-blue3 invisible opacity-0
+                                lg:gap-5 lg:flex-row lg:static lg:justify-end lg:bg-transparent lg:w-auto lg:visible lg:opacity-100 lg:py-0
+                                xl:gap-10 max-h-screen w-full overflow-auto">
+
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                            >
+                                <a href="home.html" class="inline-block">HOME</a>
+                            </li>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="features.html" class="inline-block">FEATURES</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="contact-us.html" class="inline-block">FAQS</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="plans.html" class="inline-block">PLANS</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="contact-us.html" class="inline-block">CONTACT</a>
+                            </li>
+                            <li class="nav-link font-normal transition-all duration-300 shrink-0 relative px-1 py-1
+                                after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="support.html" class="inline-block">SUPPORT</a>
+                            </li>
+                        </ul>
+
+                        <div class="text-white uppercase flex items-center gap-4">
+                            <div
+                                class="nav-link font-normal transition-all duration-300 relative px-1 py-1
+                                    after:h-0.5 after:w-0 after:bg-white after:absolute after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                                <a href="#" class="">LOGIN</a>
+                            </div>
+                            <button id="toggle-button" class="inline-block lg:hidden relative">
+
+                                <svg class="toggle-bar transition-all duration-100" width="26" height="17"
+                                    viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.166626 15.8334C0.166626 15.189 0.688961 14.6667 1.33329 14.6667H24.6666C25.3109 14.6667 25.8333 15.189 25.8333 15.8334C25.8333 16.4777 25.3109 17 24.6666 17H1.33329C0.688961 17 0.166626 16.4777 0.166626 15.8334Z"
+                                        fill="#2BBCED" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.166626 8.50001C0.166626 7.85568 0.688961 7.33334 1.33329 7.33334H24.6666C25.3109 7.33334 25.8333 7.85568 25.8333 8.50001C25.8333 9.14434 25.3109 9.66668 24.6666 9.66668H1.33329C0.688961 9.66668 0.166626 9.14434 0.166626 8.50001Z"
+                                        fill="#2BBCED" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.166626 1.16667C0.166626 0.522335 0.688961 0 1.33329 0H24.6666C25.3109 0 25.8333 0.522335 25.8333 1.16667C25.8333 1.811 25.3109 2.33333 24.6666 2.33333H1.33329C0.688961 2.33333 0.166626 1.811 0.166626 1.16667Z"
+                                        fill="#2BBCED" />
+                                </svg>
+
+                                <svg class="cross-bar -mt-px transition-all duration-300 absolute top-0 invisible opacity-0"
+                                    width="26" height="20" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_53_10)">
+                                        <path d="M2 2L27.99 27.99" stroke="#21AEE4" stroke-width="4"
+                                            stroke-miterlimit="10" stroke-linecap="round" />
+                                        <path d="M2 27.99L27.99 2" stroke="#21AEE4" stroke-width="4"
+                                            stroke-miterlimit="10" stroke-linecap="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_53_10">
+                                            <rect width="29.99" height="29.99" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- navbar section end -->
+
+    <!-- items start -->
+     <section id="items" class="w-full relative flex flex-col justify-between min-h-[calc(100vh-120px)]">
+
+        <div class="absolute top-0 w-full h-full left-0 hidden lg:flex flex-col lg:flex-row items-start z-10">
+            <div class="bg-white w-full lg:w-1/2 h-full"></div>
+            <div class="bg-blue1 w-full lg:w-1/2 h-full"></div>
+        </div>
+
+        <div class="lg:container lg:px-3 flex flex-col lg:flex-row justify-between
+            relative z-10
+            gap-10 lg:gap-20 xl:gap-24"
+        >
+
+            <div class="bg-white lg:bg-transparent lg:pb-28 pt-14 w-full lg:w-1/2">
+                <div class="container px-3 lg:px-0 space-y-10">
+                    <div class="space-y-6">
+                        <h1 class="page-title uppercase font-bold text-blue2 font-gothamBold
+                            text-4xl mini:text-5xl max-w-md"
+                        >   
+                            <span class="pb-3 inline-block text-blue1">NEED HELP?</span><br>
+                            WE ARE HERE FOR YOU...
+                        </h1>
+                    
+                        <p class="description text-gray1 font-light text-sm space-y-3 max-w-lg">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <p class="text-black font-medium">Connect with us on...</p>
+                        <!-- social media icon -->
+                        <div class="flex gap-x-2">
+                            <a href="https://discord.com/invite/VarsuiteCore" class="inline-block w-12">
+                                <img src="./assets/images/icons/discord.svg" alt="discord" class="w-full">
+                            </a>
+                            <a href="https://web.facebook.com/VarsuiteCore/" class="inline-block w-12">
+                                <img src="./assets/images/icons/facebook.svg" alt="facebook" class="w-full">
+                            </a>
+                            <a href="#" class="inline-block w-12">
+                                <img src="./assets/images/icons/linkedin.svg" alt="linkedin" class="w-full">
+                            </a>
+                        </div>
+                        <!-- social media icon -->
+        
+                    </div>
+    
+                    <div class="form-area">
+                        <div class="space-y-2">
+                            <h3 class="text-black text-4xl font-medium font-gothamMedium">Send us a message</h3>
+                            <p class="text-gray1 font-light text-sm space-y-3 max-w-sm">
+                                If you can’t find what you are looking for you can always send
+                                us a message and we will get back to you as soon as possible.
+                            </p>
+    
+                            <form action="" class="pt-10 w-full space-y-3">
+                                <div class="w-full space-y-1">
+                                    <label for="topic" class="text-black font-medium w-full">How can we help?</label>
+                                    <input type="text" name="topic" id="topic" placeholder="Select a topic..."
+                                        class="w-full focus:outline-none bg-gray-100 text-black rounded p-2 
+                                        placeholder:text-gray-600 placeholder:font-light"
+                                    >
+                                </div>
+                                <div class="w-full space-y-1">
+                                    <label for="first-name" class="text-black font-medium w-full">About you</label>
+                                    <div class="flex gap-3">
+                                        <input type="text" name="name" id="first-name" placeholder="First name"
+                                            class="w-full focus:outline-none bg-gray-100 text-black rounded p-2 
+                                            placeholder:text-gray-600 placeholder:font-light"
+                                        >
+                                        <input type="text" name="name" id="second-name" placeholder="Second name"
+                                            class="w-full focus:outline-none bg-gray-100 text-black rounded p-2 
+                                            placeholder:text-gray-600 placeholder:font-light"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="w-full space-y-1">
+                                    <label for="email" class="text-black font-medium w-full">Your email</label>
+                                    <input type="text" name="email" id="email" placeholder="Enter you email"
+                                        class="w-full focus:outline-none bg-gray-100 text-black rounded p-2 
+                                        placeholder:text-gray-600 placeholder:font-light"
+                                    >
+                                </div>
+                                <div class="w-full space-y-1">
+                                    <label for="message" class="text-black font-medium w-full">Your message to us</label>
+                                    <textarea name="message" id="message" class="w-full h-40 resize-none focus:outline-none bg-gray-100 text-black rounded p-2 
+                                    placeholder:text-gray-600 placeholder:font-light"></textarea>
+                                </div>
+                                <button type="submit" class="uppercase text-white font-gothamBook font-bold
+                                    rounded px-3 py-3 bg-blue4 text-lg lg:text-2xl hover:bg-blue1 transition-all duration-300"
+                                >
+                                    SEND MESSAGE
+                                </button>
+                            </form>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full bg-blue1 lg:bg-transparent lg:w-1/2 text-white divide-white">
+                <div class="container divide-y-2 pb-28 pt-14 space-y-5">
+                    <div class="space-y-2 md:space-y-4">
+                        <h2 class="text-2xl md:text-4xl xl:text-5xl font-gothamBold font-bold lg:max-w-lg">FREQUENTLY ASKED QUESTIONS</h2>
+                        <p class="text-sm font-light">Here are a few answers to some questions you may have about our services.</p>
+                    </div>
+    
+                    <!-- accordion start -->
+                    <div class="pt-5 faq-secton space-y-4">
+    
+                        <div class="faq-item">
+                            <button class="text-xl md:text-3xl xl:text-4xl font-semibold w-full text-start py-1 flex items-start gap-3 accordion-button">
+                                <span>+</span> <p>Frequently asked question to go in here</p>
+                            </button>
+                            <div class="accordion-text flex items-start gap-3">
+                                <span class="text-xl md:text-3xl xl:text-4xl font-semibold opacity-0">+</span>
+                                <p class="text-sm font-light py-1">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodoLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="faq-item">
+                            <button class="text-xl md:text-3xl xl:text-4xl font-semibold w-full text-start py-1 flex items-start gap-3 accordion-button">
+                                <span>+</span> <p>Frequently asked question to go in here</p>
+                            </button>
+                            <div class="accordion-text flex items-start gap-3">
+                                <span class="text-xl md:text-3xl xl:text-4xl font-semibold opacity-0">+</span>
+                                <p class="text-sm font-light py-1">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodoLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="faq-item">
+                            <button class="text-xl md:text-3xl xl:text-4xl font-semibold w-full text-start py-1 flex items-start gap-3 accordion-button">
+                                <span>+</span> <p>Frequently asked question to go in here</p>
+                            </button>
+                            <div class="accordion-text flex items-start gap-3">
+                                <span class="text-xl md:text-3xl xl:text-4xl font-semibold opacity-0">+</span>
+                                <p class="text-sm font-light py-1">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodoLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="faq-item">
+                            <button class="text-xl md:text-3xl xl:text-4xl font-semibold w-full text-start py-1 flex items-start gap-3 accordion-button">
+                                <span>+</span> <p>Frequently asked question to go in here</p>
+                            </button>
+                            <div class="accordion-text flex items-start gap-3">
+                                <span class="text-xl md:text-3xl xl:text-4xl font-semibold opacity-0">+</span>
+                                <p class="text-sm font-light py-1">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodoLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="faq-item">
+                            <button class="text-xl md:text-3xl xl:text-4xl font-semibold w-full text-start py-1 flex items-start gap-3 accordion-button">
+                                <span>+</span> <p>Frequently asked question to go in here</p>
+                            </button>
+                            <div class="accordion-text flex items-start gap-3">
+                                <span class="text-xl md:text-3xl xl:text-4xl font-semibold opacity-0">+</span>
+                                <p class="text-sm font-light py-1">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodoLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="faq-item">
+                            <button class="text-xl md:text-3xl xl:text-4xl font-semibold w-full text-start py-1 flex items-start gap-3 accordion-button">
+                                <span>+</span> <p>Frequently asked question to go in here</p>
+                            </button>
+                            <div class="accordion-text flex items-start gap-3">
+                                <span class="text-xl md:text-3xl xl:text-4xl font-semibold opacity-0">+</span>
+                                <p class="text-sm font-light py-1">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodoLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="faq-item">
+                            <button class="text-xl md:text-3xl xl:text-4xl font-semibold w-full text-start py-1 flex items-start gap-3 accordion-button">
+                                <span>+</span> <p>Frequently asked question to go in here</p>
+                            </button>
+                            <div class="accordion-text flex items-start gap-3">
+                                <span class="text-xl md:text-3xl xl:text-4xl font-semibold opacity-0">+</span>
+                                <p class="text-sm font-light py-1">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodoLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <!-- accordion end -->
+                </div>
+                
+            </div>
+            
+
+        </div>
+
+         <!-- social media Seciton start -->
+
+        <section id="social-media" class="bg-gray-100 relative z-10">
+            <div class="container px-3 flex items-center gap-x-10 justify-between py-10">
+
+            <div class="w-[350px]">
+                <a href="#" class="w-full">
+                <img src="./assets/images/logos/logo-4.svg" alt="logo" class="w-full">
+                </a>
+            </div>
+
+            <div class="flex gap-x-2">
+                <a href="https://discord.com/invite/VarsuiteCore" class="inline-block w-12">
+                    <img src="./assets/images/icons/discord.svg" alt="discord" class="w-full">
+                </a>
+                <a href="https://web.facebook.com/VarsuiteCore/" class="inline-block w-12">
+                    <img src="./assets/images/icons/facebook.svg" alt="facebook" class="w-full">
+                </a>
+                <a href="#" class="inline-block w-12">
+                    <img src="./assets/images/icons/linkedin.svg" alt="linkedin" class="w-full">
+                </a>
+            </div>
+
+            </div>
+
+            <div class="bg-white py-3">
+            <div class="container flex items-center justify-between gap-x-10 px-3 text-gray-800 text-xs">
+                <div>Copyright © 2025 Varsuite Core. All Rights Reserved</div>
+                <div class="flex flex-col mini:flex-row items-center justify-between gap-x-3 shrink-0">
+                <a href="#" class="inline-block">Privacy Policy</a>
+                <a href="#" class="inline-block">Terms of Use</a>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+  <!-- social media Seciton end -->
+
+     </section>
+    <!-- items end -->
+
+
+
+    <script src="./assets/js/tailwind.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
